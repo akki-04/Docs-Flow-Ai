@@ -2,7 +2,7 @@
 
 ## Problem Statement
 
-Companies manually analyze documents like resumes, invoices, agreements, and reports.
+Companies/user manually analyze documents like resumes, invoices, agreements, and reports.
 This process is slow and error-prone.
 
 ## Solution
@@ -18,10 +18,11 @@ DocFlow AI allows users to upload documents, extract structured information usin
 
 ## Version 1 Features
 
-- User Registration
-- Login
-- JWT Authentication
 - Upload PDF
 - Analyze Document
+- Ask query to llm
+- RAG model gives relavant answer
+- Similarity search
+- specific user understanding language answer given by this version
 - View Result
 - Dashboard
