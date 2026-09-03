@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Analyzer</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app">
+
+        <!-- Header -->
+        <header class="header">
+            <div class="logo">
+                <span>✦</span> AI Document Analyzer
+            </div>
+        </header>
+
+
+        <!-- Upload Section -->
+        <main id="uploadSection" class="upload-section">
+
+            <div class="hero">
+                <h1>Analyze your documents with AI</h1>
+                <p>
+                    Upload a PDF and ask questions directly from your document.
+                </p>
+            </div>
+
+            <div class="upload-card">
+
+                <div class="upload-icon">📄</div>
+
+                <h2>Upload your PDF</h2>
+
+                <p class="upload-text">
+                    Drag & drop your document here or browse from your computer
+                </p>
+
+                <input
+                    type="file"
+                    id="pdfInput"
+                    accept=".pdf"
+                    hidden
+                >
+
+                <button
+                    class="browse-btn"
+                    onclick="document.getElementById('pdfInput').click()">
+                    Browse PDF
+                </button>
+
+                <p id="fileName" class="file-name"></p>
+
+                <button
+                    id="analyzeBtn"
+                    class="analyze-btn"
+                    disabled>
+                    Analyze Document
+                </button>
+
+            </div>
+
+        </main>
+
+
+        <!-- Query Section -->
+        <main id="querySection" class="query-section hidden">
+
+            <div class="document-info">
+                <div class="document-icon">📄</div>
+
+                <div>
+                    <h3 id="documentName">Document.pdf</h3>
+                    <p>Document analyzed successfully ✓</p>
+                </div>
+
+                <button id="newDocumentBtn" class="new-btn">
+                    New Document
+                </button>
+            </div>
+
+
+            <div class="query-container">
+
+                <h1>Ask your document</h1>
+
+                <p class="query-subtitle">
+                    Ask anything about the information contained in your PDF.
+                </p>
+
+
+                <div class="question-box">
+
+                    <textarea
+                        id="questionInput"
+                        placeholder="Ask a question about your document..."
+                    ></textarea>
+
+                    <button id="askBtn">
+                        Ask AI
+                    </button>
+
+                </div>
+
+
+                <!-- Answer -->
+                <div id="answerBox" class="answer-box hidden">
+
+                    <div class="answer-header">
+                        <span>✦</span>
+                        AI Answer
+                    </div>
+
+                    <div id="answerText" class="answer-text">
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

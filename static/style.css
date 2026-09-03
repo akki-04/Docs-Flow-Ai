@@ -1,0 +1,328 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f7f8fc;
+    color: #1f2937;
+}
+
+.app {
+    min-height: 100vh;
+}
+
+/* Header */
+
+.header {
+    height: 70px;
+    background: white;
+    border-bottom: 1px solid #e5e7eb;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 8%;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.logo span {
+    color: #6366f1;
+    margin-right: 7px;
+}
+
+
+/* Upload Section */
+
+.upload-section {
+    max-width: 900px;
+    margin: auto;
+    padding: 80px 20px;
+}
+
+.hero {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin-bottom: 14px;
+}
+
+.hero p {
+    color: #6b7280;
+    font-size: 17px;
+}
+
+
+/* Upload Card */
+
+.upload-card {
+    background: white;
+
+    border: 2px dashed #d1d5db;
+    border-radius: 18px;
+
+    padding: 55px 30px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+}
+
+.upload-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.upload-card h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.upload-text {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+.browse-btn {
+    border: none;
+    background: #6366f1;
+    color: white;
+
+    padding: 12px 25px;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.browse-btn:hover {
+    background: #4f46e5;
+}
+
+.file-name {
+    margin-top: 18px;
+    color: #374151;
+    font-size: 14px;
+}
+
+.analyze-btn {
+    display: block;
+
+    margin: 25px auto 0;
+
+    border: none;
+
+    padding: 13px 30px;
+
+    border-radius: 8px;
+
+    background: #111827;
+    color: white;
+
+    font-weight: 600;
+
+    cursor: pointer;
+}
+
+.analyze-btn:disabled {
+    background: #d1d5db;
+    cursor: not-allowed;
+}
+
+
+/* Query Section */
+
+.query-section {
+    max-width: 1000px;
+    margin: auto;
+
+    padding: 40px 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/* Document Info */
+
+.document-info {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 18px 20px;
+
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.document-icon {
+    font-size: 30px;
+}
+
+.document-info h3 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.document-info p {
+    color: #16a34a;
+    font-size: 13px;
+}
+
+.new-btn {
+    margin-left: auto;
+
+    padding: 9px 15px;
+
+    border: 1px solid #d1d5db;
+    background: white;
+
+    border-radius: 7px;
+
+    cursor: pointer;
+}
+
+
+/* Query */
+
+.query-container {
+    max-width: 750px;
+
+    margin: 60px auto;
+}
+
+.query-container h1 {
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.query-subtitle {
+    color: #6b7280;
+    margin-bottom: 25px;
+}
+
+
+/* Question */
+
+.question-box {
+    background: white;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 12px;
+
+    padding: 15px;
+}
+
+.question-box textarea {
+    width: 100%;
+
+    min-height: 110px;
+
+    border: none;
+    outline: none;
+
+    resize: vertical;
+
+    font-family: inherit;
+
+    font-size: 15px;
+}
+
+#askBtn {
+    display: block;
+
+    margin-left: auto;
+
+    border: none;
+
+    background: #6366f1;
+    color: white;
+
+    padding: 11px 22px;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    font-weight: 600;
+}
+
+#askBtn:hover {
+    background: #4f46e5;
+}
+
+
+/* Answer */
+
+.answer-box {
+    margin-top: 30px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 12px;
+
+    padding: 25px;
+}
+
+.answer-header {
+    font-weight: 700;
+
+    margin-bottom: 15px;
+}
+
+.answer-header span {
+    color: #6366f1;
+    margin-right: 6px;
+}
+
+.answer-text {
+    color: #374151;
+
+    line-height: 1.7;
+
+    white-space: pre-line;
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .upload-section {
+        padding-top: 50px;
+    }
+
+    .document-info {
+        align-items: flex-start;
+    }
+
+    .new-btn {
+        font-size: 12px;
+    }
+
+}
